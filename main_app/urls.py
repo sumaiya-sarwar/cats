@@ -10,4 +10,6 @@ urlpatterns = [
      path('cats/<int:pk>/', views.CatDetail.as_view(), name="cat_detail"),
     path('cats/<int:pk>/update',views.CatUpdate.as_view(), name="cat_update"),
     path('cats/<int:pk>/delete',views.CatDelete.as_view(), name="cat_delete"),
+    path('accounts/signup/', views.Signup.as_view(), name="signup")
+
 ]
